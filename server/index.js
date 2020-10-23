@@ -4,6 +4,8 @@ const app = express();
 
 const port = process.env.PORT || 8085;
 
+app.use(express.static(__dirname + '/public'));
+
 const emails = [
   {
     "id": 1,
@@ -54,4 +56,8 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`)
+})
+
+app.get('*', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html')
 })

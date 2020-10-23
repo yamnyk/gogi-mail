@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm start --prefix server",
+    "build": "npm install --prefix server && npm install --prefix mail-client && npm run build --prefix mail-client && rm -rf server/public/* && cp -a mail-client/build/. server/public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
