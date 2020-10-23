@@ -1,0 +1,1 @@
+export const getFavouritesEmails = (store) => store.favourites;

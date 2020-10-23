@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit testing Footer footer container has inline styles 1`] = `
+<div
+  class="container"
+  data-testid="footer-container"
+  style="font-size: 10px; text-align: right;"
+>
+  hush...all rights have been stolen from other developers, but they don't know anything about it
+  <p>
+    the person who stoled the data is - 
+    <span
+      data-testid="person-copy"
+    >
+      You
+    </span>
+  </p>
+</div>
+`;
